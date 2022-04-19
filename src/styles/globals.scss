@@ -1,0 +1,44 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: #f4f5f9;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: #42474a;
+}
+
+ul {
+  list-style: none;
+}
+
+.active-topnav {
+  color: #713bdb;
+  font-weight: 600;
+
+  div {
+    background: #713bdb;
+  }
+}
+
+.active-sidenav {
+  li div {
+    color: #713bdb !important;
+    font-weight: 600;
+  }
+}
