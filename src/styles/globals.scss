@@ -15,7 +15,7 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   background: #f4f5f9;
-  color: #000;
+  color: #42474a;
 }
 
 a {
@@ -27,6 +27,7 @@ ul {
   list-style: none;
 }
 
+// Sidebar
 .active-topnav {
   color: #713bdb;
   font-weight: 600;
@@ -36,9 +37,21 @@ ul {
   }
 }
 
+.active {
+  display: none;
+}
+
 .active-sidenav {
   li div {
     color: #713bdb !important;
     font-weight: 600;
+  }
+
+  .inactive {
+    display: none;
+  }
+
+  .active {
+    display: flex;
   }
 }

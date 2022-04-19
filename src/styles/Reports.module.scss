@@ -1,4 +1,125 @@
 .wrapper {
-  margin: 3rem;
-  background: #fff;
+  margin: 4rem 20rem 4rem 4rem;
+
+  @media (max-width: 1540px) {
+    margin: 4rem 4rem 4rem 4rem;
+  }
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.7rem;
+  margin-top: 2.3rem;
+
+  > div {
+    background: #fff;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.06);
+    padding: 2rem;
+  }
+}
+
+.item {
+  .money {
+    display: flex;
+    flex-direction: row;
+
+    div:first-child {
+      font-size: 5rem;
+    }
+
+    div:last-child {
+      align-self: flex-start;
+      font-size: 3rem;
+      color: #713bdb;
+      margin-left: 0.5rem;
+    }
+  }
+
+  p {
+    font-size: 1.7rem;
+  }
+}
+
+.policyProgress {
+  margin-top: 2rem;
+
+  progress::-webkit-progress-value {
+    background: linear-gradient(90deg, #33d69f 0%, #50edb8 111.47%);
+  }
+
+  progress::-moz-progress-bar {
+    /* for FF ::progress-bar is the value bar */
+    background: linear-gradient(90deg, #33d69f 0%, #50edb8 111.47%);
+  }
+}
+
+.claimProgress {
+  margin-top: 4rem;
+
+  progress::-webkit-progress-value {
+    background: linear-gradient(90deg, #713bdb 0%, #a886e9 111.47%);
+  }
+
+  progress::-moz-progress-bar {
+    background: linear-gradient(90deg, #713bdb 0%, #a886e9 111.47%);
+  }
+}
+
+.progressTextValue {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: -1rem;
+
+  .progressText {
+    font-size: 1.7rem;
+  }
+
+  .progressValue {
+    display: flex;
+    flex-direction: row;
+    font-size: 2.2rem;
+
+    div:last-child {
+      align-self: flex-start;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+/* Progress bar */
+progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 0.5rem;
+  border-radius: 5rem;
+  border: 0;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #ededed;
+  width: 100%;
+  border-radius: 5rem;
+}
+
+progress {
+  /* for FF target directly the element */
+  background-color: #ededed;
+  width: 100%;
+  border-radius: 5rem;
+}
+
+progress::-webkit-progress-value {
+  -webkit-transition: all 0.7s !important;
+  transition: all 0.7s;
+  border-radius: 5rem;
+}
+
+progress::-moz-progress-bar {
+  transition: all 0.7s !important;
+  border-radius: 5rem;
 }

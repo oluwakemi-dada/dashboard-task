@@ -5,7 +5,7 @@ import styles from '../../../styles/TopNav.module.scss';
 const TopNav = () => {
   return (
     <ul className={styles.nav}>
-      <NavLink to='/overview' activeClassName='active-topnav'>
+      <NavLink exact to='/' activeClassName='active-topnav'>
         <li>Overview</li>
         <div></div>
       </NavLink>
@@ -13,7 +13,7 @@ const TopNav = () => {
         <li>Policy</li>
         <div></div>
       </NavLink>
-      <NavLink exact to='/' activeClassName='active-topnav'>
+      <NavLink to='/reports' activeClassName='active-topnav'>
         <li>Reports</li>
         <div></div>
       </NavLink>

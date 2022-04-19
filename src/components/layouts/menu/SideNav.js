@@ -2,12 +2,18 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Logo from '../../../assets/images/logo.png';
 import UserPic from '../../../assets/images/user-pic.png';
-import Overview from '../../../assets/images/overview.png';
-import Policy from '../../../assets/images/policy.png';
-import Reports from '../../../assets/images/report.png';
-import Company from '../../../assets/images/company.png';
-import UserAccount from '../../../assets/images/user-account.png';
-import History from '../../../assets/images/history.png';
+import Overview from '../../../assets/images/overview.svg';
+import OverviewActive from '../../../assets/images/overview-active.svg';
+import Policy from '../../../assets/images/policy.svg';
+import PolicyActive from '../../../assets/images/policy-active.svg';
+import Reports from '../../../assets/images/reports.svg';
+import ReportsActive from '../../../assets/images/reports-active.svg';
+import Company from '../../../assets/images/company.svg';
+import CompanyActive from '../../../assets/images/company-active.svg';
+import UserAccount from '../../../assets/images/user-account.svg';
+import UserAccountActive from '../../../assets/images/user-account-active.svg';
+import History from '../../../assets/images/history.svg';
+import HistoryActive from '../../../assets/images/history-active.svg';
 import Logout from '../../../assets/images/logout.png';
 import styles from '../../../styles/SideNav.module.scss';
 
@@ -33,39 +39,49 @@ const SideNav = () => {
       </div>
 
       <ul className={styles.nav}>
-        <NavLink to='/overview' activeClassName='active-sidenav'>
+        <NavLink exact to='/' activeClassName='active-sidenav'>
           <li>
-            <img src={Overview} alt='overview icon' />
+            <img src={Overview} alt='overview icon' className='inactive' />
+            <img src={OverviewActive} alt='overview icon' className='active' />
             <div>Overview</div>
           </li>
         </NavLink>
         <NavLink to='/policy' activeClassName='active-sidenav'>
           <li>
-            <img src={Policy} alt='policy icon' />
+            <img src={Policy} alt='policy icon' className='inactive' />
+            <img src={PolicyActive} alt='policy icon' className='active' />
             <div>Policy</div>
           </li>
         </NavLink>
-        <NavLink exact to='/' activeClassName='active-sidenav'>
+        <NavLink to='/reports' activeClassName='active-sidenav'>
           <li>
-            <img src={Reports} alt='reports icon' />
+            <img src={Reports} alt='reports icon' className='inactive' />
+            <img src={ReportsActive} alt='reports icon' className='active' />
             <div>Reports</div>
           </li>
         </NavLink>
         <NavLink to='/company' activeClassName='active-sidenav'>
           <li>
-            <img src={Company} alt='company icon' />
+            <img src={Company} alt='company icon' className='inactive' />
+            <img src={CompanyActive} alt='company icon' className='active' />
             <div>Company</div>
           </li>
         </NavLink>
         <NavLink to='/account' activeClassName='active-sidenav'>
           <li>
-            <img src={UserAccount} alt='account icon' />
+            <img src={UserAccount} alt='account icon' className='inactive' />
+            <img
+              src={UserAccountActive}
+              alt='account icon'
+              className='active'
+            />
             <div>User Account</div>
           </li>
         </NavLink>
         <NavLink to='/history' activeClassName='active-sidenav'>
           <li>
-            <img src={History} alt='history icon' />
+            <img src={History} alt='history icon' className='inactive' />
+            <img src={HistoryActive} alt='history icon' className='active' />
             <div>History</div>
           </li>
         </NavLink>

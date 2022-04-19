@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Header from '../layouts/header/Header';
+import styles from '../../styles/Reports.module.scss';
 
 const Overview = () => {
   return (
-    <div>Overview</div>
-  )
-}
+    <div className={styles.wrapper}>
+      <Header />
+    </div>
+  );
+};
 
-export default Overview
+export default Overview;

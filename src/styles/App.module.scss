@@ -1,4 +1,8 @@
 .app {
   display: grid;
   grid-template-columns: 0.17fr 0.83fr;
+
+  @media (max-width: 1540px) {
+    grid-template-columns: 0.2fr 0.8fr;
+  }
 }

@@ -1,5 +1,45 @@
 .wrapper {
-  background: url(../assets/images/header-big.png) no-repeat center center /
-    cover;
-  height: 28.4rem;
+  background: url(../assets/images/bg-wave.png) no-repeat center center/ cover;
+  height: 31.1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+}
+
+.bgLeft {
+  // width: 52rem;
+}
+
+.headerText {
+  padding-right: 4rem;
+  p {
+    font-size: 3.3rem;
+    font-weight: 600;
+    color: #42474a;
+    text-align: center;
+  }
+
+  .newbie {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #42474a;
+    margin-top: 1rem;
+
+    div:first-child {
+      border: 1.8px dotted #42474a;
+      border-radius: 0.5rem;
+      padding: 0.2rem 1.1rem;
+      font-size: 2rem;
+
+      margin-right: 1rem;
+    }
+
+    div:last-child {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+  }
 }

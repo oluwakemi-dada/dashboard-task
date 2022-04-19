@@ -15,8 +15,8 @@ const App = () => {
         <div>
           <TopNav />
           <Switch>
-            <Route exact path='/' component={Reports} />
-            <Route path='/overview' component={Overview} />
+            <Route exact path='/' component={Overview} />
+            <Route path='/reports' component={Reports} />
             <Route path='/policy' component={Policy} />
           </Switch>
         </div>
