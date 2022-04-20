@@ -31,7 +31,7 @@ const LeftRightNav = () => {
 
       {/* NAV ON SMALL SCREEN */}
       <ResponsiveNav state={navbarState} className={navbarState ? 'show' : ''}>
-        <RightNav />
+        <RightNav setNavbarState={setNavbarState} />
       </ResponsiveNav>
     </>
   );
