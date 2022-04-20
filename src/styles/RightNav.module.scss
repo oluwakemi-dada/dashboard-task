@@ -17,7 +17,11 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-top: 7.5rem;
+  margin-top: 5.5rem;
+
+  @media (max-width: 340px) {
+    margin-top: 2rem;
+  }
 }
 
 .content {
@@ -70,13 +74,13 @@
   }
 
   .nav {
-    margin-top: 5rem;
+    margin-top: 3rem;
 
     > * li {
       display: grid;
       grid-template-columns: 0.2fr 0.8fr;
       width: 100%;
-      margin: 1.5rem 0 2.2rem 1.5rem;
+      margin: 1.5rem 0 1.5rem 1.5rem;
       align-items: center;
 
       img {
@@ -101,7 +105,7 @@
 .logout {
   @include flexRowCenter;
   position: absolute;
-  bottom: 3.5rem;
+  bottom: 2rem;
   left: 50%;
   color: #a2a4b9;
   font-size: 1.8rem;
