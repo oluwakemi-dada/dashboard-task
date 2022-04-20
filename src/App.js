@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import SideNav from './components/layouts/menu/SideNav';
+// import LeftNav from './components/layouts/menu/LeftNav';
+import LeftRightNav from './components/layouts/menu/LeftRightNav';
 import TopNav from './components/layouts/menu/TopNav';
 import Overview from './components/overview/Overview';
 import Policy from './components/policy/Policy';
@@ -11,7 +12,7 @@ const App = () => {
   return (
     <Router>
       <div className={styles.app}>
-        <SideNav />
+        <LeftRightNav />
         <div>
           <TopNav />
           <Switch>

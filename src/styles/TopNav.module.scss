@@ -5,6 +5,7 @@
   height: 8.7rem;
   background: #fff;
   box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.1);
+  margin-left: 18vw;
 
   li {
     margin: 0 2rem 0 2rem;
@@ -15,6 +16,10 @@
     height: 0.2rem;
     background: #fff;
     margin: auto;
-    margin-top: .2rem;
+    margin-top: 0.2rem;
+  }
+
+  @media (max-width: 1230px) {
+    display: none;
   }
 }

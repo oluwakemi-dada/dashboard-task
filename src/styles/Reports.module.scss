@@ -1,7 +1,11 @@
 .wrapper {
-  margin: 4rem 20rem 4rem 4rem;
+  margin: 4rem 20rem 4rem 20vw;
 
   @media (max-width: 1540px) {
+    margin: 4rem 4rem 4rem 20vw;
+  }
+
+  @media (max-width: 1230px) {
     margin: 4rem 4rem 4rem 4rem;
   }
 }

@@ -1,0 +1,167 @@
+@mixin flexRowCenter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flexColumnCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  position: fixed;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 10px 3px 15px rgba(0, 0, 0, 0.05);
+  height: 100vh;
+  width: 18vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: 1230px) {
+    position: initial;
+    width: 100%;
+    height: max-content;
+  }
+}
+
+.logoToggle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    @include flexRowCenter;
+    margin: 2.5rem 0;
+
+    img {
+      width: 2.7rem;
+    }
+
+    h1 {
+      margin-left: 1rem;
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  @media (max-width: 1230px) {
+    width: 100vw;
+    padding: 0 5rem;
+
+    .logo {
+      justify-content: flex-start;
+    }
+
+    .toggle {
+      display: block;
+      z-index: 99;
+      cursor: pointer;
+    }
+  }
+}
+
+.content {
+  .user {
+    @include flexColumnCenter;
+    img {
+      width: 7.8rem;
+    }
+
+    .name {
+      font-weight: 700;
+      color: #888cb7;
+      margin-top: 0.7rem;
+    }
+
+    .welcome {
+      font-size: 1rem;
+      color: #a2a4b9;
+      margin: 0.1rem 0;
+    }
+
+    .planStatus {
+      font-size: 1.4rem;
+      color: #a2a4b9;
+
+      span {
+        color: #3edfa8;
+      }
+    }
+  }
+
+  .createBtn {
+    @include flexRowCenter;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background: #713bdb;
+    color: #fff;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.12);
+    border-radius: 0.7rem;
+    height: 3.5rem;
+    width: 16.8rem;
+    margin: auto;
+    margin-top: 2rem;
+
+    span {
+      margin-left: 1rem;
+      font-weight: bolder;
+    }
+  }
+
+  .nav {
+    margin-top: 4rem;
+
+    > * li {
+      display: grid;
+      grid-template-columns: 0.2fr 0.8fr;
+      width: 100%;
+      margin: 1.5rem 0 1.5rem 1.5rem;
+      align-items: center;
+
+      img {
+        width: 1.9rem;
+      }
+
+      div {
+        color: #a2a4b9;
+      }
+
+      @media (max-width: 1540px) {
+        grid-template-columns: 0.2fr 0.8fr;
+      }
+    }
+  }
+
+  @media (max-width: 1230px) {
+    display: none;
+  }
+}
+
+.logout {
+  @include flexRowCenter;
+  position: absolute;
+  bottom: 3.5rem;
+  left: 50%;
+  color: #a2a4b9;
+  font-size: 1.8rem;
+  transform: translateX(-50%);
+
+  div {
+    margin-left: 1rem;
+  }
+
+  @media (max-width: 1230px) {
+    display: none;
+  }
+}
