@@ -23,7 +23,7 @@
   > div {
     background: #fff;
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.06);
-    padding: 2rem;
+    padding: 2rem 2rem 3rem 2rem;
   }
 
   @media (max-width: 950px) {
@@ -58,7 +58,7 @@
 }
 
 .policyProgress {
-  margin-top: 2rem;
+  margin-top: 4.5rem;
 
   progress::-webkit-progress-value {
     background: linear-gradient(90deg, #33d69f 0%, #50edb8 111.47%);
