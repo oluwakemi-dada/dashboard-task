@@ -5,8 +5,13 @@
   height: 8.7rem;
   background: #fff;
   box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.1);
-  margin-left: 18vw;
   padding-left: 3rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 18vw;
+  width: 100%;
+  // margin-bottom: 12rem;
 
   li {
     margin: 0 2rem 0 2rem;

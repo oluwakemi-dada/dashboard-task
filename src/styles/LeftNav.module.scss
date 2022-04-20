@@ -15,6 +15,7 @@
 .wrapper {
   position: fixed;
   left: 0;
+  top: 0;
   background-color: #fff;
   box-shadow: 10px 3px 15px rgba(0, 0, 0, 0.05);
   height: 100vh;
@@ -58,6 +59,10 @@
   @media (max-width: 1230px) {
     width: 100vw;
     padding: 0 5rem;
+    position: fixed;
+    left: 0;
+    background: #fff;
+    z-index: 2;
 
     .logo {
       justify-content: flex-start;
@@ -65,7 +70,6 @@
 
     .toggle {
       display: block;
-      z-index: 99;
       cursor: pointer;
     }
   }

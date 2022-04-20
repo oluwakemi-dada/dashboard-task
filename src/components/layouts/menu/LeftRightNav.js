@@ -7,7 +7,7 @@ const ResponsiveNav = styled.div`
   position: fixed;
   right: -10vw;
   top: 0;
-  z-index: 10;
+  z-index: 1;
   background-color: #fff;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.12);
   height: 100vh;
