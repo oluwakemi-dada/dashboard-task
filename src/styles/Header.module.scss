@@ -1,16 +1,29 @@
 .wrapper {
   background: url(../assets/images/bg-wave.png) no-repeat center center/ cover;
-  height: 31.1rem;
+  min-height: 31.1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
 
-
+  @media (max-width: 950px) {
+    flex-direction: column;
+  }
 }
 
 .bgLeft {
-  // width: 52rem;
+  @media (max-width: 550px) {
+    width: 40rem;
+    margin-top: 1.5rem;
+  }
+
+  @media (max-width: 450px) {
+    width: 30rem;
+  }
+
+  @media (max-width: 350px) {
+    width: 20rem;
+  }
 }
 
 .headerText {
@@ -29,19 +42,55 @@
     justify-content: center;
     color: #42474a;
     margin-top: 1rem;
+    font-size: 2rem;
 
     div:first-child {
       border: 1.8px dotted #42474a;
       border-radius: 0.5rem;
       padding: 0.2rem 1.1rem;
-      font-size: 2rem;
-
       margin-right: 1rem;
     }
 
     div:last-child {
-      font-size: 2rem;
       font-weight: 600;
+      cursor: pointer;
+    }
+  }
+
+  @media (max-width: 950px) {
+    padding: 0 2rem;
+    margin: 5rem 0;
+    width: 100%;
+  }
+
+  @media (max-width: 550px) {
+    margin: 2.5rem 0 3rem 0;
+    p {
+      font-size: 3rem;
+    }
+
+    .newbie {
+      font-size: 1.7rem;
+    }
+  }
+
+  @media (max-width: 450px) {
+    p {
+      font-size: 2.7rem;
+    }
+
+    .newbie {
+      font-size: 1.6rem;
+    }
+  }
+
+  @media (max-width: 350px) {
+    p {
+      font-size: 2.5rem;
+    }
+
+    .newbie {
+      font-size: 1.4rem;
     }
   }
 }

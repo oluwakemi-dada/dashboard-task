@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { VscChromeClose } from 'react-icons/vsc';
 import Logo from '../../../assets/images/logo.png';
@@ -24,10 +24,12 @@ const LeftNav = ({ navbarState, setNavbarState }) => {
     <div className={styles.wrapper}>
       <div>
         <div className={styles.logoToggle}>
-          <div className={styles.logo}>
-            <img src={Logo} alt='logo' />
-            <h1>Insurance Portal</h1>
-          </div>
+          <Link to='/'>
+            <div className={styles.logo}>
+              <img src={Logo} alt='logo' />
+              <h1>Insurance Portal</h1>
+            </div>
+          </Link>
           <div className={styles.toggle}>
             {navbarState ? (
               <VscChromeClose onClick={() => setNavbarState(false)} />
